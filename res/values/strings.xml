@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ABRMain!</string>
+    <string name="app_name">Advisa Bonus Rechner</string>
+    <string name="information">Sie können nun mit einem Wisch nach Links oder Rechts zwischen den bekannten Ansichten wechseln. Probieren Sie es aus...es ist kinderleicht !</string>
+    <string name="welcome">Willkommen beim Advisa Bonus Rechner!</string>
+
+</resources>

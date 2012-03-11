@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2" >
+
+    <EditText        
+         android:id="@+id/empty_tfield1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:inputType="number" 
+         android:hint="Umsatz Monat in €"/>
+    <EditText        
+         android:id="@+id/empty_tfield2"
+         android:layout_below="@+id/empty_tfield1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:inputType="number" 
+         android:hint="Umsatz Monat in €"/>
+    <EditText        
+         android:id="@+id/empty_tfield3"
+         android:layout_below="@+id/empty_tfield2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:inputType="number" 
+         android:hint="Umsatz Monat in €"/>
+    <EditText        
+         android:id="@+id/empty_tfield4"
+         android:layout_below="@+id/empty_tfield3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:inputType="number" 
+         android:hint="Umsatz Monat in €"/>
+    <Button 
+         android:id="@+id/button_ok"
+         android:layout_below="@+id/empty_tfield4"
+         android:text="Vorhersage"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"/>
+    
+    <EditText
+                android:id="@+id/salary2"
+                android:layout_below="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Jahresbruttogehalt in €" />
+    <ImageView 
+        android:layout_below="@+id/salary2"
+        android:src="@drawable/advisa_logo"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_centerHorizontal="true"/>"
+    
+
+</RelativeLayout>
