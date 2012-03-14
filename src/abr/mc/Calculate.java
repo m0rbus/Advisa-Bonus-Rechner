@@ -1,17 +1,14 @@
 package abr.mc;
 
 
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
 import android.view.ViewGroup;
-
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -52,8 +49,6 @@ public class Calculate extends Fragment implements OnClickListener
 		tfield_salary = (EditText) view.findViewById(R.id.salary);
 		button_calc = (Button) view.findViewById(R.id.button_calculate);
 		button_calc.setOnClickListener(this);
-
-
 		return view;
 	}
 
@@ -63,7 +58,8 @@ public class Calculate extends Fragment implements OnClickListener
 
 
 		// The Softkeyboard shall be hidden after pressing the button
-		InputMethodManager imm = (InputMethodManager)super.getActivity().getSystemService(Context.INPUT_METHOD_SERVICE); 
+		InputMethodManager imm = (InputMethodManager) super.getActivity().getSystemService(
+				Context.INPUT_METHOD_SERVICE);
 		imm.hideSoftInputFromWindow(tfield_volume.getWindowToken(), 0);
 
 		// Calculating the bonuscap of the Salary
@@ -79,41 +75,58 @@ public class Calculate extends Fragment implements OnClickListener
 
 	private void calc_bonuscap()
 	{
-		keeper = Double.parseDouble(tfield_salary.getText().toString());
-
-		salborder = (Double.parseDouble(tfield_salary.getText().toString()) * 2);
-		bonuscap = (Double.parseDouble(tfield_volume.getText().toString())) - salborder;
+		if (tfield_salary.getText().toString().equals("") || tfield_volume.getText().toString().equals(""))
+		{
+			Toast inputerror = Toast.makeText(super.getActivity().getBaseContext(), "Falsche Eingabe",
+					Toast.LENGTH_LONG);
+			inputerror.show();
+		}
+		else
+		{
+			keeper = Double.parseDouble(tfield_salary.getText().toString());
+			salborder = (Double.parseDouble(tfield_salary.getText().toString()) * 2);
+			bonuscap = (Double.parseDouble(tfield_volume.getText().toString())) - salborder;
+		}
 	}
 
 	private Integer bonus_calc( Double bonusvalue )
 	{
 		int holder = 0;
 
-		if (bonuscap <= 0)
+		if (tfield_salary.getText().toString().equals("") || tfield_volume.getText().toString().equals(""))
 		{
-			Toast nomoney = Toast.makeText(super.getActivity().getBaseContext(), "Leider gibt es keinen Bonus! :(",
+			Toast inputerror = Toast.makeText(super.getActivity().getBaseContext(), "Falsche Eingabe",
 					Toast.LENGTH_LONG);
-			nomoney.show();
+			inputerror.show();
 		}
-		else if (bonusvalue > ((keeper * 4) / 2) || bonusvalue < ((keeper * 5) / 2))
+		else
 		{
-			holder = (int) (bonusvalue * 0.07);
-		}
-		else if (bonusvalue > ((keeper * 5) / 2) || bonusvalue < ((keeper * 6) / 2))
-		{
-			holder = (int) (bonusvalue * 0.1);
-		}
-		else if (bonusvalue > ((keeper * 6) / 2) || bonusvalue < ((keeper * 7) / 2))
-		{
-			holder = (int) (bonusvalue * 0.13);
-		}
-		else if (bonusvalue > ((keeper * 7) / 2) || bonusvalue < ((keeper * 8) / 2))
-		{
-			holder = (int) (bonusvalue * 0.16);
-		}
-		else if (bonusvalue > ((keeper * 8) / 2) || bonusvalue < ((keeper * 9) / 2))
-		{
-			holder = (int) (bonusvalue * 0.19);
+			if (bonuscap <= 0)
+			{
+				Toast nomoney = Toast.makeText(super.getActivity().getBaseContext(),
+						"Leider gibt es keinen Bonus! :(", Toast.LENGTH_LONG);
+				nomoney.show();
+			}
+			else if (bonusvalue > ((keeper * 4) / 2) || bonusvalue < ((keeper * 5) / 2))
+			{
+				holder = (int) (bonusvalue * 0.07);
+			}
+			else if (bonusvalue > ((keeper * 5) / 2) || bonusvalue < ((keeper * 6) / 2))
+			{
+				holder = (int) (bonusvalue * 0.1);
+			}
+			else if (bonusvalue > ((keeper * 6) / 2) || bonusvalue < ((keeper * 7) / 2))
+			{
+				holder = (int) (bonusvalue * 0.13);
+			}
+			else if (bonusvalue > ((keeper * 7) / 2) || bonusvalue < ((keeper * 8) / 2))
+			{
+				holder = (int) (bonusvalue * 0.16);
+			}
+			else if (bonusvalue > ((keeper * 8) / 2) || bonusvalue < ((keeper * 9) / 2))
+			{
+				holder = (int) (bonusvalue * 0.19);
+			}
 		}
 		return holder;
 	}
@@ -121,8 +134,8 @@ public class Calculate extends Fragment implements OnClickListener
 	public void longtoast( String text )
 	{
 
-		Toast toast = Toast.makeText(super.getActivity().getBaseContext(), "Der aktuelle Bonus beträgt: " + text + " €"
-				+ " Brutto", Toast.LENGTH_LONG);
+		Toast toast = Toast.makeText(super.getActivity().getBaseContext(), "Der aktuelle Bonus beträgt: "
+				+ text + " €" + " Brutto", Toast.LENGTH_LONG);
 		toast.show();
 	}
 }

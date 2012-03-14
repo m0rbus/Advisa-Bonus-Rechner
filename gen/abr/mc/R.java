@@ -16,39 +16,67 @@ public final class R {
     }
     public static final class drawable {
         public static final int advisa_logo=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int infobg=0x7f020002;
+        public static final int bg_main=0x7f020001;
+        public static final int ic_launcher=0x7f020002;
+        public static final int infobg=0x7f020003;
     }
     public static final class id {
-        public static final int RLayout=0x7f060000;
-        public static final int TLayout1=0x7f060002;
-        public static final int button_calculate=0x7f060009;
-        public static final int button_ok=0x7f06000e;
-        public static final int empty_tfield1=0x7f06000a;
-        public static final int empty_tfield2=0x7f06000b;
-        public static final int empty_tfield3=0x7f06000c;
-        public static final int empty_tfield4=0x7f06000d;
-        public static final int infoimageview=0x7f060010;
-        public static final int pager=0x7f060011;
-        public static final int salary=0x7f060005;
-        public static final int salary2=0x7f06000f;
-        public static final int tableRow2=0x7f060003;
-        public static final int tableRow3=0x7f060006;
-        public static final int textView1=0x7f060001;
-        public static final int textView2=0x7f060004;
-        public static final int textView3=0x7f060007;
-        public static final int volume=0x7f060008;
+        public static final int RLayout=0x7f070000;
+        public static final int TLayout1=0x7f070002;
+        public static final int about=0x7f070012;
+        public static final int button_calculate=0x7f070009;
+        public static final int button_ok=0x7f07000f;
+        public static final int empty_tfield1=0x7f07000b;
+        public static final int empty_tfield2=0x7f07000c;
+        public static final int empty_tfield3=0x7f07000d;
+        public static final int empty_tfield4=0x7f07000e;
+        public static final int heading=0x7f07000a;
+        public static final int options=0x7f070013;
+        public static final int pager=0x7f070011;
+        public static final int quit=0x7f070014;
+        public static final int salary=0x7f070005;
+        public static final int salary2=0x7f070010;
+        public static final int tableRow2=0x7f070003;
+        public static final int tableRow3=0x7f070006;
+        public static final int textView1=0x7f070001;
+        public static final int textView2=0x7f070004;
+        public static final int textView3=0x7f070007;
+        public static final int volume=0x7f070008;
     }
     public static final class layout {
         public static final int calculate=0x7f030000;
         public static final int forecast=0x7f030001;
-        public static final int info=0x7f030002;
-        public static final int mainview=0x7f030003;
+        public static final int mainview=0x7f030002;
+    }
+    public static final class menu {
+        public static final int main_menu=0x7f060000;
     }
     public static final class string {
-        public static final int app_name=0x7f050001;
-        public static final int hello=0x7f050000;
-        public static final int information=0x7f050002;
-        public static final int welcome=0x7f050003;
+        public static final int about=0x7f050005;
+        public static final int app_name=0x7f050000;
+        public static final int button_calc_bonus=0x7f05000c;
+        public static final int button_forecast=0x7f05000f;
+        public static final int gross_salary=0x7f050009;
+        public static final int halfyear_turnover=0x7f05000b;
+        /**  Calculate 
+         */
+        public static final int heading_calculate=0x7f050006;
+        /**  Forecast 
+         */
+        public static final int heading_forecast=0x7f05000d;
+        public static final int logotext=0x7f050001;
+        /**  Menu 
+         */
+        public static final int menu_about=0x7f050002;
+        public static final int menu_options=0x7f050003;
+        public static final int menu_quit=0x7f050004;
+        public static final int month1=0x7f050010;
+        public static final int month2=0x7f050011;
+        public static final int month3=0x7f050012;
+        public static final int month4=0x7f050013;
+        public static final int monthly_turnover=0x7f05000e;
+        public static final int salary=0x7f050007;
+        public static final int salary_yearly=0x7f050008;
+        public static final int turnover=0x7f05000a;
     }
 }

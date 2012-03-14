@@ -3,23 +3,24 @@
     android:id="@+id/RLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#F2F2F2" >
-    
-    <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Advisa Bonus Rechner"
-                android:textSize="20sp"
-                android:layout_centerHorizontal="true"
-                android:textColor="#000000"/>
+    android:background="@drawable/bg_main"
+    android:paddingRight="1dip"
+    android:drawingCacheQuality="high" >
 
-    
-    <TableLayout 
-        android:id="@+id/TLayout1"
-        android:layout_below="@+id/textView1"      
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/heading_calculate"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/TLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1" >
 
         <TableRow
             android:id="@+id/tableRow2"
@@ -30,19 +31,15 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jahresgehalt: " 
-                android:textColor="#000000"/>
+                android:text="@string/salary"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/salary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Jahresbruttogehalt"/>
-
-                
-           
-
+                android:hint="@string/gross_salary"
+                android:inputType="number" />
         </TableRow>
 
         <TableRow
@@ -54,34 +51,31 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Umsatz: " 
-                android:textColor="#000000"/>
+                android:text="@string/turnover"
+                android:textColor="#000000" />
 
             <EditText
                 android:id="@+id/volume"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number" 
-                android:hint="Umsatz Halbjahr"/>
-
+                android:hint="@string/halfyear_turnover"
+                android:inputType="number" />
         </TableRow>
-		
-        <TableRow >
-            
-        </TableRow>
-       
     </TableLayout>
+
     <Button
-			android:layout_below="@+id/TLayout1"
-			android:id="@+id/button_calculate"
-			android:text="Bonus Berechnen"					
-			android:layout_width="fill_parent"
-			android:layout_height="68dip"
-			/>
-    <ImageView 
+        android:id="@+id/button_calculate"
+        android:layout_width="fill_parent"
+        android:layout_height="68dip"
+        android:layout_below="@+id/TLayout1"
+        android:text="@string/button_calc_bonus" />
+
+    <ImageView
+        android:contentDescription="@string/logotext"
+        android:layout_width="154dp"
+        android:layout_height="197dp"
         android:layout_below="@+id/button_calculate"
-        android:src="@drawable/advisa_logo"
-        android:layout_width="300px"
-        android:layout_height="300px"
-        android:layout_centerHorizontal="true"/>"
-</RelativeLayout>    
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/advisa_logo" />
+
+</RelativeLayout>

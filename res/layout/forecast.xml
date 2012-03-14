@@ -2,54 +2,77 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F2F2F2" >
+    android:background="@drawable/bg_main"
+    android:drawingCacheQuality="high">
 
-    <EditText        
-         android:id="@+id/empty_tfield1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:inputType="number" 
-         android:hint="Umsatz Monat in €"/>
-    <EditText        
-         android:id="@+id/empty_tfield2"
-         android:layout_below="@+id/empty_tfield1"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:inputType="number" 
-         android:hint="Umsatz Monat in €"/>
-    <EditText        
-         android:id="@+id/empty_tfield3"
-         android:layout_below="@+id/empty_tfield2"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:inputType="number" 
-         android:hint="Umsatz Monat in €"/>
-    <EditText        
-         android:id="@+id/empty_tfield4"
-         android:layout_below="@+id/empty_tfield3"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:inputType="number" 
-         android:hint="Umsatz Monat in €"/>
-    <Button 
-         android:id="@+id/button_ok"
-         android:layout_below="@+id/empty_tfield4"
-         android:text="Vorhersage"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"/>
-    
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/heading_forecast"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
     <EditText
-                android:id="@+id/salary2"
-                android:layout_below="@+id/button_ok"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Jahresbruttogehalt in €" />
+        android:id="@+id/empty_tfield1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/monthly_turnover"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/empty_tfield2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_tfield1"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/monthly_turnover"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/empty_tfield3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_tfield2"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/monthly_turnover"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/empty_tfield4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_tfield3"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/monthly_turnover"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_tfield4"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_forecast" />
+    
+    <EditText
+        android:id="@+id/salary2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_ok"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/gross_salary"
+        android:inputType="number" />
+
     <ImageView 
+        android:contentDescription="@string/logotext"
         android:layout_below="@+id/salary2"
         android:src="@drawable/advisa_logo"
-        android:layout_width="300px"
-        android:layout_height="300px"
+        android:layout_width="154dp"
+        android:layout_height="197dp"
         android:layout_centerHorizontal="true"/>"
     
 

@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, ABRMain!</string>
-    <string name="app_name">Advisa Bonus Rechner</string>
-    <string name="information">Sie können nun mit einem Wisch nach Links oder Rechts zwischen den bekannten Ansichten wechseln. Probieren Sie es aus...es ist kinderleicht !</string>
-    <string name="welcome">Willkommen beim Advisa Bonus Rechner!</string>
-
+ 
+    <string name="app_name">Advisa Bonus-Rechner</string>
+    <string name="logotext">Company Logo</string>
+    
+    <!-- Menu -->
+    <string name="menu_about">About</string>
+    <string name="menu_options">Einstellungen</string>
+    <string name="menu_quit">Beenden</string>
+	<string name="about">Advisa Bonusrechner\n
+	    				 Diese Applikation wurde unter der GNU GPL entwickelt.\n
+	    				 \n
+	    				 MC Studios(R)\n
+	    				 Obertshausen, März 2012
+	</string>
+	
+	<!-- Calculate -->
+	<string name="heading_calculate">Bonus berechnen</string>
+	<string name="salary">Gehalt: </string>
+	<string name="salary_yearly">Jahresgehalt: </string>
+	<string name="gross_salary">Bruttojahresgehalt in €</string>
+	<string name="turnover">Umsatz: </string>
+	<string name="halfyear_turnover">Umsatz im Halbjahr</string>
+	<string name="button_calc_bonus">Bonus berechnen!</string>
+	
+	<!-- Forecast -->
+	<string name="heading_forecast">Bonus vorhersagen</string>
+	<string name="monthly_turnover">Umsatz Monat in €</string>
+	<string name="button_forecast">Bonus Approximation berechnen</string>
+	<string name="month1">Monat 1</string>
+	<string name="month2">Monat 2</string>
+	<string name="month3">Monat 3</string>
+	<string name="month4">Monat 4</string>
 </resources>
