@@ -20,8 +20,9 @@ public class Calculate extends Fragment implements OnClickListener
 	public EditText tfield_salary, tfield_volume;
 	public static Integer real_bonus;
 	public static Double salborder, bonuscap, keeper;
-	public Button button_calc;
-
+	public Button button_calc, button_test;
+	ActionItem ai;
+	final QuickAction mQuickAction = new QuickAction(ABRMainView.context);
 
 	public static Calculate newInstance( String title )
 	{
@@ -49,6 +50,42 @@ public class Calculate extends Fragment implements OnClickListener
 		tfield_salary = (EditText) view.findViewById(R.id.salary);
 		button_calc = (Button) view.findViewById(R.id.button_calculate);
 		button_calc.setOnClickListener(this);
+		button_test = (Button) view.findViewById(R.id.test);
+		button_test.setOnClickListener(this);
+
+		ai = new ActionItem(1, "Der Stefan is plöööt", getResources().getDrawable(R.drawable.ic_add));
+
+		mQuickAction.addActionItem(ai);
+
+		//create an onclick listener for the action item menu
+		mQuickAction.setOnActionItemClickListener(new QuickAction.OnActionItemClickListener()
+		{
+
+			public void onItemClick( QuickAction quickAction, int pos, int actionId )
+			{
+				ActionItem actionItem = quickAction.getActionItem(pos);
+
+				if (actionId == 1)
+				{
+					Toast.makeText(ABRMainView.context, "Add item selected", Toast.LENGTH_SHORT).show();
+				}
+				else
+				{
+					Toast.makeText(ABRMainView.context, actionItem.getTitle() + " selected",
+							Toast.LENGTH_SHORT).show();
+				}
+			}
+		});
+
+		mQuickAction.setOnDismissListener(new QuickAction.OnDismissListener()
+		{
+			public void onDismiss()
+			{
+				//TODO add something that will be done, if the dialogue gets dismissed
+			}
+		});
+
+
 		return view;
 	}
 
@@ -56,20 +93,25 @@ public class Calculate extends Fragment implements OnClickListener
 	public void onClick( View v )
 	{
 
+		if (v.getId() == R.id.button_calculate)
+		{
+			// The Softkeyboard shall be hidden after pressing the button
+			InputMethodManager imm = (InputMethodManager) super.getActivity().getSystemService(
+					Context.INPUT_METHOD_SERVICE);
+			imm.hideSoftInputFromWindow(tfield_volume.getWindowToken(), 0);
 
-		// The Softkeyboard shall be hidden after pressing the button
-		InputMethodManager imm = (InputMethodManager) super.getActivity().getSystemService(
-				Context.INPUT_METHOD_SERVICE);
-		imm.hideSoftInputFromWindow(tfield_volume.getWindowToken(), 0);
-
-		// Calculating the bonuscap of the Salary
-		calc_bonuscap();
-		// Calculating the final Bonus with the given bonuscap
-		real_bonus = bonus_calc(bonuscap);
-		// Put the result on the screen with a simple toast message
-		longtoast(real_bonus.toString());
-
-
+			// Calculating the bonuscap of the Salary
+			calc_bonuscap();
+			// Calculating the final Bonus with the given bonuscap
+			real_bonus = bonus_calc(bonuscap);
+			// Put the result on the screen with a simple toast message
+			longtoast(real_bonus.toString());
+		}
+		else if (v.getId() == R.id.test)
+		{
+			mQuickAction.show(v);
+			mQuickAction.setAnimStyle(QuickAction.ANIM_GROW_FROM_CENTER);
+		}
 	}
 
 

@@ -23,7 +23,7 @@ public class Information extends Activity implements OnClickListener
 		image.setClickable(true);
 		image.setOnClickListener(this);
 		image.setScaleType(ScaleType.FIT_XY);
-		image.setAlpha(150);
+		//image.setAlpha(150);
 		image.setLayoutParams(new Gallery.LayoutParams(LayoutParams.WRAP_CONTENT,
 				  LayoutParams.WRAP_CONTENT));
 		mLL.addView(image);	

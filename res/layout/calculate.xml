@@ -71,11 +71,19 @@
         android:text="@string/button_calc_bonus" />
 
     <ImageView
+        android:id="@+id/advisalogo"
         android:contentDescription="@string/logotext"
         android:layout_width="154dp"
         android:layout_height="197dp"
         android:layout_below="@+id/button_calculate"
         android:layout_centerHorizontal="true"
         android:src="@drawable/advisa_logo" />
+    
+    <Button
+        android:layout_below="@+id/advisalogo"
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="68dip"      
+        android:text="@string/teststring" />
 
 </RelativeLayout>

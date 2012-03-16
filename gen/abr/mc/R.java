@@ -8,75 +8,147 @@
 package abr.mc;
 
 public final class R {
+    public static final class anim {
+        public static final int grow_from_bottom=0x7f040000;
+        public static final int grow_from_bottomleft_to_topright=0x7f040001;
+        public static final int grow_from_bottomright_to_topleft=0x7f040002;
+        public static final int grow_from_top=0x7f040003;
+        public static final int grow_from_topleft_to_bottomright=0x7f040004;
+        public static final int grow_from_topright_to_bottomleft=0x7f040005;
+        public static final int rail=0x7f040006;
+        public static final int shrink_from_bottom=0x7f040007;
+        public static final int shrink_from_bottomleft_to_topright=0x7f040008;
+        public static final int shrink_from_bottomright_to_topleft=0x7f040009;
+        public static final int shrink_from_top=0x7f04000a;
+        public static final int shrink_from_topleft_to_bottomright=0x7f04000b;
+        public static final int shrink_from_topright_to_bottomleft=0x7f04000c;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f040000;
-        public static final int white=0x7f040001;
+        public static final int black=0x7f050000;
+        public static final int white=0x7f050001;
     }
     public static final class drawable {
         public static final int advisa_logo=0x7f020000;
         public static final int bg_main=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int infobg=0x7f020003;
+        public static final int ic_accept=0x7f020002;
+        public static final int ic_add=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int ic_list_more=0x7f020005;
+        public static final int ic_list_more_selected=0x7f020006;
+        public static final int ic_up=0x7f020007;
+        public static final int icon=0x7f020008;
+        public static final int infobg=0x7f020009;
+        public static final int quickaction_arrow_down=0x7f02000a;
+        public static final int quickaction_arrow_up=0x7f02000b;
+        public static final int quickaction_background=0x7f02000c;
+        public static final int quickaction_bottom_frame=0x7f02000d;
+        public static final int quickaction_slider_background=0x7f02000e;
+        public static final int quickaction_slider_btn=0x7f02000f;
+        public static final int quickaction_slider_btn_normal=0x7f020010;
+        public static final int quickaction_slider_btn_on=0x7f020011;
+        public static final int quickaction_slider_btn_pressed=0x7f020012;
+        public static final int quickaction_slider_btn_selected=0x7f020013;
+        public static final int quickaction_slider_grip_left=0x7f020014;
+        public static final int quickaction_slider_grip_right=0x7f020015;
+        public static final int quickaction_top_frame=0x7f020016;
+        public static final int quickcontact_drop_shadow=0x7f020017;
+        public static final int textfield_default=0x7f020018;
     }
     public static final class id {
-        public static final int RLayout=0x7f070000;
-        public static final int TLayout1=0x7f070002;
-        public static final int about=0x7f070012;
-        public static final int button_calculate=0x7f070009;
-        public static final int button_ok=0x7f07000f;
-        public static final int empty_tfield1=0x7f07000b;
-        public static final int empty_tfield2=0x7f07000c;
-        public static final int empty_tfield3=0x7f07000d;
-        public static final int empty_tfield4=0x7f07000e;
-        public static final int heading=0x7f07000a;
-        public static final int options=0x7f070013;
-        public static final int pager=0x7f070011;
-        public static final int quit=0x7f070014;
-        public static final int salary=0x7f070005;
-        public static final int salary2=0x7f070010;
-        public static final int tableRow2=0x7f070003;
-        public static final int tableRow3=0x7f070006;
-        public static final int textView1=0x7f070001;
-        public static final int textView2=0x7f070004;
-        public static final int textView3=0x7f070007;
-        public static final int volume=0x7f070008;
+        public static final int RLayout=0x7f090002;
+        public static final int TLayout1=0x7f090004;
+        public static final int about=0x7f090021;
+        public static final int advisalogo=0x7f09000c;
+        public static final int arrow_down=0x7f090020;
+        public static final int arrow_up=0x7f09001c;
+        public static final int btn1=0x7f09000e;
+        public static final int btn2=0x7f09000f;
+        public static final int button_calculate=0x7f09000b;
+        public static final int button_ok=0x7f090016;
+        public static final int empty_tfield1=0x7f090012;
+        public static final int empty_tfield2=0x7f090013;
+        public static final int empty_tfield3=0x7f090014;
+        public static final int empty_tfield4=0x7f090015;
+        public static final int footer=0x7f09001f;
+        public static final int header2=0x7f09001b;
+        public static final int heading=0x7f090011;
+        public static final int i_more=0x7f090018;
+        public static final int iv_icon=0x7f090000;
+        public static final int l_list=0x7f090010;
+        public static final int options=0x7f090022;
+        public static final int pager=0x7f09001a;
+        public static final int quit=0x7f090023;
+        public static final int salary=0x7f090007;
+        public static final int salary2=0x7f090017;
+        public static final int scroll=0x7f09001d;
+        public static final int t_name=0x7f090019;
+        public static final int tableRow2=0x7f090005;
+        public static final int tableRow3=0x7f090008;
+        public static final int test=0x7f09000d;
+        public static final int textView1=0x7f090003;
+        public static final int textView2=0x7f090006;
+        public static final int textView3=0x7f090009;
+        public static final int tracks=0x7f09001e;
+        public static final int tv_title=0x7f090001;
+        public static final int volume=0x7f09000a;
     }
     public static final class layout {
-        public static final int calculate=0x7f030000;
-        public static final int forecast=0x7f030001;
-        public static final int mainview=0x7f030002;
+        public static final int action_item=0x7f030000;
+        public static final int calculate=0x7f030001;
+        public static final int example1=0x7f030002;
+        public static final int example2=0x7f030003;
+        public static final int forecast=0x7f030004;
+        public static final int list=0x7f030005;
+        public static final int mainview=0x7f030006;
+        public static final int quickaction=0x7f030007;
     }
     public static final class menu {
-        public static final int main_menu=0x7f060000;
+        public static final int main_menu=0x7f080000;
     }
     public static final class string {
-        public static final int about=0x7f050005;
-        public static final int app_name=0x7f050000;
-        public static final int button_calc_bonus=0x7f05000c;
-        public static final int button_forecast=0x7f05000f;
-        public static final int gross_salary=0x7f050009;
-        public static final int halfyear_turnover=0x7f05000b;
+        public static final int about=0x7f060006;
+        public static final int app_name=0x7f060000;
+        public static final int button_calc_bonus=0x7f06000d;
+        public static final int button_forecast=0x7f060010;
+        public static final int gross_salary=0x7f06000a;
+        public static final int halfyear_turnover=0x7f06000c;
         /**  Calculate 
          */
-        public static final int heading_calculate=0x7f050006;
+        public static final int heading_calculate=0x7f060007;
         /**  Forecast 
          */
-        public static final int heading_forecast=0x7f05000d;
-        public static final int logotext=0x7f050001;
+        public static final int heading_forecast=0x7f06000e;
+        public static final int logotext=0x7f060001;
         /**  Menu 
          */
-        public static final int menu_about=0x7f050002;
-        public static final int menu_options=0x7f050003;
-        public static final int menu_quit=0x7f050004;
-        public static final int month1=0x7f050010;
-        public static final int month2=0x7f050011;
-        public static final int month3=0x7f050012;
-        public static final int month4=0x7f050013;
-        public static final int monthly_turnover=0x7f05000e;
-        public static final int salary=0x7f050007;
-        public static final int salary_yearly=0x7f050008;
-        public static final int turnover=0x7f05000a;
+        public static final int menu_about=0x7f060003;
+        public static final int menu_options=0x7f060004;
+        public static final int menu_quit=0x7f060005;
+        public static final int month1=0x7f060011;
+        public static final int month2=0x7f060012;
+        public static final int month3=0x7f060013;
+        public static final int month4=0x7f060014;
+        public static final int monthly_turnover=0x7f06000f;
+        public static final int salary=0x7f060008;
+        public static final int salary_yearly=0x7f060009;
+        public static final int teststring=0x7f060002;
+        public static final int turnover=0x7f06000b;
+    }
+    public static final class style {
+        public static final int Animations=0x7f070000;
+        /**  PopDownMenu 
+         */
+        public static final int Animations_PopDownMenu=0x7f070001;
+        public static final int Animations_PopDownMenu_Center=0x7f070004;
+        public static final int Animations_PopDownMenu_Left=0x7f070002;
+        public static final int Animations_PopDownMenu_Right=0x7f070003;
+        /**  PopUpMenu 
+         */
+        public static final int Animations_PopUpMenu=0x7f070005;
+        public static final int Animations_PopUpMenu_Center=0x7f070008;
+        public static final int Animations_PopUpMenu_Left=0x7f070006;
+        public static final int Animations_PopUpMenu_Right=0x7f070007;
     }
 }
