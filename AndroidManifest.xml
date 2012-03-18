@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="Information" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity android:name="abr.view.Information" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
     </application>
 
 </manifest>
