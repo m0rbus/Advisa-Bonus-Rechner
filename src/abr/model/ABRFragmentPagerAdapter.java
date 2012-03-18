@@ -9,10 +9,9 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabWidget;
-import android.widget.TextView;
+
 
 
 public class ABRFragmentPagerAdapter extends FragmentPagerAdapter implements TabHost.OnTabChangeListener,

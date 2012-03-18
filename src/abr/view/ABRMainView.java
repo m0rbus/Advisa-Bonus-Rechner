@@ -2,7 +2,7 @@ package abr.view;
 
 
 import abr.actionmenu.ActionItem;
-import abr.mc.R;
+import abr.view.R;
 import abr.model.ABRFragmentPagerAdapter;
 import android.app.AlertDialog;
 import android.content.Context;

@@ -1,6 +1,6 @@
 package abr.view;
 
-import abr.mc.R;
+import abr.view.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;

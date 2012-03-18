@@ -1,11 +1,10 @@
 package abr.model;
 
-import abr.mc.R;
+import abr.view.R;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.LayoutInflater;
 import android.content.Context;
-import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 

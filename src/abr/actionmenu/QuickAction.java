@@ -2,7 +2,7 @@ package abr.actionmenu;
 
 import java.util.ArrayList;
 import java.util.List;
-import abr.mc.R;
+import abr.view.R;
 import android.content.Context;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;

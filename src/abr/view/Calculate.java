@@ -3,7 +3,7 @@ package abr.view;
 
 import abr.actionmenu.ActionItem;
 import abr.actionmenu.QuickAction;
-import abr.mc.R;
+import abr.view.R;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
